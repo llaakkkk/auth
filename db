@@ -1,0 +1,10 @@
+CREATE SCHEMA `auth` DEFAULT CHARACTER SET utf8 ;
+- создаем таблицу юзера
+CREATE TABLE `auth`.`users` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NULL,
+  `created_at` TIMESTAMP NULL,
+  `updated_at` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
